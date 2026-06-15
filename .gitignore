@@ -27,6 +27,7 @@ env/
 *.pt
 *.pth
 *.ckpt
+*.npz
 
 # OS junk
 .DS_Store
