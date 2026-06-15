@@ -1,0 +1,33 @@
+Processing training-a: 409 files ...
+Processing training-b: 490 files ...
+Processing training-c: 31 files ...
+Processing training-d: 55 files ...
+Processing training-e: 2141 files ...
+Processing training-f: 114 files ...
+
+Done in 4.7 min — 3240 files processed, 0 failures
+
+=== Label Convention ===
+  REFERENCE.csv : 1 = Abnormal,  -1 = Normal  (PhysioNet 2016 convention)
+  Pipeline      : 1 = Normal,    -1 = Abnormal (intuitive convention)
+  Relationship  : ref_label == -pipeline_label
+
+=== Label Counts vs REFERENCE.csv ===
+  Source                   Normal   Abnormal    Total
+  REFERENCE.csv              2575        665     3240
+  Pipeline                   2575        665     3240
+  Counts match: True
+  Per-record check: all labels consistent with convention inversion.
+
+Plot saved: segments_vs_duration.png
+
+=== Feature Arrays ===
+  X_mfcc     : (68104, 26)
+  X_mel      : (68104, 128, 8)
+  labels     : (68104,)  unique=[-1, 1]
+  record_ids : (68104,)  unique records=3240
+
+=== Failures (0) ===
+  None
+
+Saved: preprocessing_log.csv, features.npz, segments_vs_duration.png
