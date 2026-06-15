@@ -1,0 +1,37 @@
+# PhysioNet dataset (downloaded separately - see README for download script)
+classification-of-heart-sound-recordings-the-physionet-computing-in-cardiology-challenge-2016-1.0.0/
+
+# Data
+data/
+
+# Audio/annotation files anywhere (catches stray copies)
+*.wav
+*.hea
+*.mat
+*.dat
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Model checkpoints / large artifacts
+*.pkl
+*.h5
+*.pt
+*.pth
+*.ckpt
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
