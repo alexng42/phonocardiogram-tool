@@ -6,3 +6,4 @@ N_MFCC = 13
 N_MELS = 128
 WINDOW_SEC = 2.0          # fixed window length for segmentation
 WINDOW_OVERLAP = 0.5      # 50% overlap between consecutive windows
+MIN_SEGMENTS = 10         # records with fewer segments are excluded from train/test
